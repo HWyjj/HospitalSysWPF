@@ -28,5 +28,19 @@ namespace HospitalSysWPF.ViewModels
         {
 
         }
+        private string lSTitle;
+
+        public string LSTitle
+        {
+            get { return lSTitle; }
+            set { lSTitle = value; RaisePropertyChanged(); }
+        }
+
+
+
+        public ListSettingsViewModel()
+        {
+            LSTitle = "挂单号";
+        }
     }
 }
