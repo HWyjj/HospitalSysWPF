@@ -10,7 +10,7 @@ namespace HospitalSysWPF.ViewModels
 {
     public class ListSettingsViewModel : BindableBase, IDialogAware
     {
-        public string Title { get; set; }
+        public string Title { get; set; } = "挂号单设置";
 
         public event Action<IDialogResult> RequestClose;
 
@@ -27,6 +27,19 @@ namespace HospitalSysWPF.ViewModels
         public void OnDialogOpened(IDialogParameters parameters)
         {
 
+        }
+
+        private string lSTitle;
+
+        public string LSTitle
+        {
+            get { return lSTitle; }
+            set { lSTitle = value;RaisePropertyChanged(); }
+        }
+
+        public ListSettingsViewModel()
+        {
+            LSTitle = "挂号单1";
         }
     }
 }
