@@ -6,13 +6,13 @@
     xmlns:local="clr-namespace:HospitalSysWPF.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
-    d:DesignHeight="500"
+    d:DesignHeight="520"
     d:DesignWidth="900"
     mc:Ignorable="d">
     <prism:Dialog.WindowStyle>
         <Style TargetType="Window">
             <Setter Property="Width" Value="900" />
-            <Setter Property="Height" Value="500" />
+            <Setter Property="Height" Value="520" />
             <Setter Property="ResizeMode" Value="NoResize" />
             <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterScreen" />
         </Style>
@@ -38,7 +38,7 @@
                     VerticalAlignment="Top"
                     VerticalContentAlignment="Center"
                     IsReadOnly="True"
-                    Text=""
+                    Text="{Binding LSTitle}"
                     TextWrapping="Wrap" />
                 <TextBox
                     Width="90"
@@ -65,7 +65,7 @@
                 </GroupBox>
                 <GroupBox
                     Width="100"
-                    Height="380"
+                    Height="390"
                     Margin="-100,36,0,0"
                     BorderBrush="Transparent"
                     Header="打印项目">
